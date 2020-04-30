@@ -90,7 +90,7 @@
             global.onmessage = function() {
                 postMessageIsAsynchronous = false;
             };
-            global.postMessage("", "*");
+            global.postMessage("test", "*");
             global.onmessage = oldOnMessage;
             return postMessageIsAsynchronous;
         }
